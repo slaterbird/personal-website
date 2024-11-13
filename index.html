@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slater Bird's Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Slater Bird</h1>
+        <p>A Journey Through Finance, Volleyball, and Photography</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="menu">
+        <ul class="menu-items">
+            <li><a href="#about">About</a></li>
+            <li><a href="#finance-blog">Finance Blog</a></li>
+            <li><a href="#volleyball-tips">Volleyball Tips</a></li>
+            <li><a href="#photography">Photography</a></li>
+            <li><a href="#quotes">Inspiration</a></li>
+            <li><a href="#timeline">My Journey</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#dissertation">Dissertation</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="content-block">
+        <h2>About Me</h2>
+        <img src="images/your-profile.jpg" alt="Slater Bird" class="profile-image">
+        <p>Hello! I'm Slater Bird, a finance professional and volleyball enthusiast. Connect with me on my social platforms:</p>
+        <ul class="social-links">
+            <li><a href="https://www.youtube.com/@slaterbird8926" target="_blank">YouTube</a></li>
+            <li><a href="https://www.instagram.com/slaterbirdy/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/slater-bird-48b34a1b8/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://volleybox.net/slater-bird-p134299" target="_blank">Volleybox</a></li>
+        </ul>
+    </section>
+
+    <!-- Finance Blog Section -->
+    <section id="finance-blog" class="content-block">
+        <h2>Financial Insights</h2>
+        <input type="text" id="search-bar" placeholder="Search articles..." onkeyup="searchArticles()">
+        <div class="blog-posts">
+            <div class="blog-post" data-title="Investment Strategies">
+                <h3>Investment Strategies</h3>
+                <p>Exploring effective investment strategies for long-term success.</p>
+            </div>
+            <div class="blog-post" data-title="Market Analysis">
+                <h3>Market Analysis</h3>
+                <p>Analyzing the latest market trends and their impact on investments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volleyball Coaching Tips Carousel -->
+    <section id="volleyball-tips" class="content-block">
+        <h2>Volleyball Coaching Tips</h2>
+        <div class="carousel">
+            <div class="carousel-item">"Focus on your stance and footwork. Positioning is key!"</div>
+            <div class="carousel-item">"Master the basics of serving and receiving before complex moves."</div>
+            <div class="carousel-item">"Communication with teammates is crucial for effective play."</div>
+        </div>
+        <button onclick="prevTip()">Previous</button>
+        <button onclick="nextTip()">Next</button>
+    </section>
+
+    <!-- Photography Section with Gallery -->
+    <section id="photography" class="content-block">
+        <h2>Photography</h2>
+        <div class="filters">
+            <button onclick="filterGallery('all')">All</button>
+            <button onclick="filterGallery('nature')">Nature</button>
+            <button onclick="filterGallery('sports')">Sports</button>
+            <button onclick="filterGallery('travel')">Travel</button>
+        </div>
+        <div class="gallery">
+            <img src="images/photo1.jpg" alt="Nature" class="gallery-item nature">
+            <img src="images/photo2.jpg" alt="Sports" class="gallery-item sports">
+            <img src="images/photo3.jpg" alt="Travel" class="gallery-item travel">
+        </div>
+    </section>
+
+    <!-- Inspirational Quotes Rotator -->
+    <section id="quotes" class="content-block">
+        <h2>Inspiration</h2>
+        <div id="quote-display"></div>
+    </section>
+
+    <!-- Interactive Timeline for Career and Academic Journey -->
+    <section id="timeline" class="content-block">
+        <h2>My Journey</h2>
+        <div class="timeline">
+            <div class="timeline-event">
+                <h3>2024 - University of Nottingham</h3>
+                <p>Graduated with a Master’s in Finance and Investment. Thesis on the economic impact of surfing culture.</p>
+            </div>
+            <div class="timeline-event">
+                <h3>2023 - Oppenheimer & Co.</h3>
+                <p>Joined as a Research Intern, gaining hands-on experience in asset management.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="content-block">
+        <h2>My Resume</h2>
+        <p>Download my <a href="Resume202409190808.pdf" target="_blank">Resume</a></p>
+        <iframe src="Resume202409190808.pdf" width="100%" height="500px"></iframe>
+    </section>
+
+    <!-- Dissertation Section -->
+    <section id="dissertation" class="content-block">
+        <h2>My Dissertation</h2>
+        <p><strong>Title:</strong> The Economic Impact of the Culture of Surfing: A Financial Analysis of Nazaré</p>
+        <p><strong>Abstract:</strong> This dissertation explores the unique economic effects of surfing culture in Nazaré, analyzing its impact on tourism, local business, and the wider financial ecosystem.</p>
+        <p>Read the full dissertation: <a href="Bird_Slater_Diss.pdf" target="_blank">Download Dissertation</a></p>
+        <iframe src="Bird_Slater_Diss.pdf" width="100%" height="500px"></iframe>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-block">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- JavaScript for Interactive Features -->
+    <script src="script.js"></script>
+</body>
+</html>

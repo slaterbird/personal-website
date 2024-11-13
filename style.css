@@ -1,0 +1,92 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling with Background Image */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+    background-image: url('background.WEBP');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Background overlay effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+}
+
+/* Colors */
+:root {
+    --accent-color: #2E3A59;
+    --text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: var(--text-shadow);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: var(--accent-color);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #333;
+    letter-spacing: 0.5px;
+    margin-top: 8px;
+}
+
+/* Navigation Menu */
+.menu-items {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.menu-items li a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 4px;
+}
+
+.menu-items li a:hover {
+    color: #fff;
+    background-color: var(--accent-color);
+}
+
+/* Content Block Styling */
+.content-block {
+    padding: 30px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-left: 
